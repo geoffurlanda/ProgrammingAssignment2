@@ -30,6 +30,18 @@ makeCacheMatrix <- function(x = matrix()) {
   getCacheMatrixInverse <- function() {
     matrixInverseCache
   }
+  
+  ## setup function return
+  ## return list of functions
+  ## set - set matrix
+  ## get - get matrix
+  ## cacheMatrixInverse - cache the inverse of a matrix
+  ## getCacheMatrixInverse - gets the cached inverse of a matrix
+  list(set = set, 
+       get = get, 
+       cacheMatrixInverse = cacheMatrixInverse, 
+       getCacheMatrixInverse = getCacheMatrixInverse 
+       )
 
 }
 
